@@ -4,6 +4,10 @@ import java.util.ArrayList;
 import java.util.Map;
 
 public class PlanStudija {
-    Map<Integer, ArrayList<Predmet>> mapa;
-
+    public Map<Integer, ArrayList<Predmet>> mapa;
+    public ArrayList<Predmet> predmeti;
+    public void dodajPredmet(int semestar, Predmet predmet) {
+        predmeti.add(predmet);
+        mapa.put(semestar,predmeti);
+    }
 }

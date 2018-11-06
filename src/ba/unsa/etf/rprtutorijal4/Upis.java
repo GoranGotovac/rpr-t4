@@ -10,4 +10,15 @@ public class Upis {
         this.planStudija = planStudija;
     }
 
+    public Student getStudent() {
+        return student;
+    }
+
+    public Predmet getPredmet() {
+        return predmet;
+    }
+
+    public PlanStudija getPlanStudija() {
+        return planStudija;
+    }
 }
