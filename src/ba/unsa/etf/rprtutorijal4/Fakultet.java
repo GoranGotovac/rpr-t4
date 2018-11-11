@@ -18,5 +18,12 @@ public class Fakultet {
         studenti.add(upis.getStudent());
         upisi.add(upis);
     }
-
+    public String ispisi(Predmet p) {
+        String spisakStudenata = "";
+        for (Upis upis: upisi) {
+            if(upis.getPredmet().equals(p))
+            spisakStudenata += upis.getStudent().getIme() + " " + upis.getStudent().getBrojIndexa()+"\n";
+        }
+        return spisakStudenata;
+    }
 }
